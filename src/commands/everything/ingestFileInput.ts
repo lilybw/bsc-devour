@@ -14,7 +14,7 @@ import type { ApplicationContext, CLIFunc, ResErr } from '../../ts/metaTypes';
 import { checkIDRangesAndPathsOfSubFiles, verifyIngestFile, verifyIngestFileAssets, verifySubFileIDAssignments } from './ingestFileVerifier.ts';
 
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 const handleIngestFileInput = async (args: string[], context: ApplicationContext): Promise<ResErr<string>> => {
@@ -72,7 +72,7 @@ const printSettingsToLog = (settings: IngestFileSettings, context: ApplicationCo
     context.logger.log('[if_cmd] Settings for file: ' + constructedStringTable);
 };
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export const INGEST_FILE_INPUT_CMD: CLIFunc<string> = {
@@ -91,7 +91,7 @@ export const INGEST_FILE_INPUT_CMD: CLIFunc<string> = {
 
 /**
  * Read the file as a string. Then parse as JSON. No type checks so far
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export const readIngestFile = async (url: string): Promise<ResErr<any>> => {

@@ -18,7 +18,7 @@ export const checkIfImageTypeIsSupported = (type: string): boolean => {
 /**
  * NB: For svgs, width and height relates to the viewport properties. Not pixels.
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  * @param blob
  * @param context
  * @returns

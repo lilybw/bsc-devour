@@ -75,7 +75,7 @@ export const validateAtMostOneOf = <T>(target: T, typeDeclaration: TypeDeclarati
  * ```
  *
  * @since 0.1.0
- * @author GustavBW
+ * @author lilybw
  */
 export const Structure: StructureEntryPoint = Object.assign(
     (constraints: StructuralConstraint[]) => {

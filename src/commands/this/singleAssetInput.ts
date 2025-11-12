@@ -14,7 +14,7 @@ import { prepareSingleAssetForUpload, type TracableAssetEntry } from '../../proc
 import { IngestFileAssetType, type IngestFileSettings, type IngestFileSingleAssetField } from '../../ts/ingestFileTypes.ts';
 
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 const handleSingleAssetCLIInput = async (args: string[], context: ApplicationContext): Promise<ResErr<string>> => {
@@ -159,7 +159,7 @@ const handleSingleAssetCLIInput = async (args: string[], context: ApplicationCon
 };
 
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export const SINGLE_ASSET_INPUT_CMD: CLIFunc<string> = {

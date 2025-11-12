@@ -14,7 +14,7 @@ type LODGenSpec = {
 }
 
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  * @param baseBlob image
  * @param sizeThreshold in kilobytes
@@ -176,7 +176,7 @@ const formatInstanceToType = (instance: sharp.Sharp, type: string): ResErr<sharp
 };
 /**
  * Halves the resultion of the image in both dimensions
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export async function downscaleImage(blob: ArrayBuffer, type: string, xScale: number, yScale: number, context?: ApplicationContext): Promise<ResErr<Blob>> {

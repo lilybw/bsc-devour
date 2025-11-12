@@ -52,7 +52,7 @@ export const readThresholdArg = (arg: string): ResErr<number> => {
 /**
  * Expects: host port, user password, dbName, sslMode
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  * @returns Either a DBDSN or an error
  */
 export const readCompactDSNNotationRaw = (arg: string): ResErr<DBDSN> => {
@@ -93,7 +93,7 @@ export const readCompactDSNNotationRaw = (arg: string): ResErr<DBDSN> => {
 /**
  * Expects: dsn="host port, user password, dbName, sslMode"
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  * @returns Either a DBDSN or an error
  */
 export const readCompactDSNNotation = (arg: string): ResErr<DBDSN> => {
@@ -109,7 +109,7 @@ export const readCompactDSNNotation = (arg: string): ResErr<DBDSN> => {
 /**
  * Expects: 0 0 0, 0 0
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  * @returns Either a TransformDTO or an error
  */
 export const readCompactTransformNotationRaw = (arg: string): ResErr<TransformDTO> => {
@@ -157,7 +157,7 @@ export const readCompactTransformNotationRaw = (arg: string): ResErr<TransformDT
 /**
  * Expects: transform="0 0 0, 0 0"
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  * @returns Either a TransformDTO or an error
  */
 export const readCompactTransformNotation = (arg: string): ResErr<TransformDTO> => {

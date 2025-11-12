@@ -3,7 +3,7 @@ import { getCommands } from '../commandRegistry.ts';
 import { VERSION } from '../../main.ts';
 
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export const formatTopLevelHelpString = (): string => {
@@ -22,7 +22,7 @@ export const formatTopLevelHelpString = (): string => {
 };
 /**
  * @param subCategory any, defaults to just top level help string
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export const getSubCategoryHelpString = (args: string[], context: ApplicationContext): Promise<ResErr<string>> => {
@@ -44,7 +44,7 @@ export const getSubCategoryHelpString = (args: string[], context: ApplicationCon
     }
 };
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export const HELP_CMD: CLIFunc<string> = {
@@ -61,7 +61,7 @@ export const HELP_CMD: CLIFunc<string> = {
 };
 
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 const INGEST_FILE_FORMAT_EXAMPLE = `

@@ -116,7 +116,7 @@ export interface PreparedAutoIngestSubScript extends AutoIngestSubScript {
     path: string;
 }
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export interface AutoIngestScript {

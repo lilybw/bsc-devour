@@ -22,7 +22,7 @@ export const isValidUrl = (url: string): boolean => {
 
 /**
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  * @param type type observed
  * @param expectedMIMEType type expected
  * @returns the corresponding ImageMIMEType if the type conforms to the expectedMIMEType, else an error
@@ -44,7 +44,7 @@ export const findConformingMIMEType = (type: string): ResErr<ImageMIMEType> => {
 /**
  * Complete runtime type checking for objects.
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  */
 export const conformsToType = <T>(object: T, topLevelValidator: TypeDeclaration | FieldValidatorFunction | Type): string | null => {
     if (typeof topLevelValidator === 'string') {
@@ -157,7 +157,7 @@ const validateOptionalType = (value: any, validator: AbstractValidator): boolean
 /**
  * Same as T | undefined
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  */
 export const optionalType = (validator: AbstractValidator): FieldValidatorFunction => {
     const wrappedValidator = (value: any) => validateOptionalType(value, validator);

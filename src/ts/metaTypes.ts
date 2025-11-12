@@ -2,14 +2,14 @@ import type { Logger } from '../logging/simpleLogger';
 import type { DB } from '../networking/dbConn';
 
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export type Error = string;
 export type ResErr<T> = { result: T; error: null } | { result: null; error: Error };
 
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export type CLIFunc<T> = {
@@ -26,7 +26,7 @@ export type ApplicationContext = {
 };
 
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.2
  */
 export enum ImageMIMEType {
@@ -41,7 +41,7 @@ export enum ImageMIMEType {
     SVG = 'image/svg+xml',
 }
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.2
  */
 export enum ImageFileType {
@@ -58,7 +58,7 @@ export enum ImageFileType {
 /**
  * All possible image format types, even some not supported.
  * Index 0 of all field values is the MIME type.
- * @auther GustavBW
+ * @auther lilybw
  * @since 0.0.1
  */
 export const IMAGE_TYPES: { [key: string]: [ImageMIMEType, ...(ImageMIMEType | ImageFileType)[]] } = {

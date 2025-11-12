@@ -3,7 +3,7 @@ import type { Error } from '../ts/metaTypes';
  * Types that are possible to check using JS "typeof" itself.
  *
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  */
 export enum Type {
     STRING = 'string',
@@ -20,7 +20,7 @@ export enum Type {
  * Also has some appended information about the nature of the check and the expected type for better error messages.
  *
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  */
 export type FieldValidatorFunction = ((valueOfField: any) => boolean) & {
     typeString: string;
@@ -30,7 +30,7 @@ export type FieldValidatorFunction = ((valueOfField: any) => boolean) & {
  * The base type for a type declaration. I.e. any some object that describes a type.
  *
  * @since 0.0.1
- * @author GustavBW
+ * @author lilybw
  */
 export type TypeDeclaration = {
     [key: string]: Type | FieldValidatorFunction | TypeDeclaration;
@@ -54,7 +54,7 @@ export type AbstractValidator = TypeDeclaration | FieldValidatorFunction | Type;
  * Some function that can be used to check the structure of an object.
  *
  * @since 0.1.0
- * @author GustavBW
+ * @author lilybw
  */
 export type StructuralConstraint = <T>(target: T, baseDeclaration: TypeDeclaration) => Error | undefined;
 /**
@@ -74,7 +74,7 @@ export type StructuralConstraint = <T>(target: T, baseDeclaration: TypeDeclarati
  * ```
  *
  * @since 0.1.0
- * @author GustavBW
+ * @author lilybw
  */
 export type StructureEntryPoint = ((constaints: StructuralConstraint[]) => (typeDeclaration: TypeDeclaration) => TypeDeclaration) & {
     /**

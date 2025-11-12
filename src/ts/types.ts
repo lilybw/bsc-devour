@@ -4,7 +4,7 @@ import { ImageMIMEType } from './metaTypes';
 
 /**
  * CLI shortHand: "xOff yOff zIndex, xScale yScale", example: transform="0f 0f 0, 0f 0f"
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export type Transform = {
@@ -52,7 +52,7 @@ export const UNIT_TRANSFORM: Transform = {
     yScale: 1,
 };
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export type CollectionEntry = {
@@ -61,7 +61,7 @@ export type CollectionEntry = {
     graphicalAssetId: number;
 };
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 
@@ -75,7 +75,7 @@ export const INGEST_FILE_COLLECTION_ENTRY_TYPEDECL: TypeDeclaration = {
 };
 /**
  * Represents some graphical asset in varying levels of detail (downscaled)
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export type LODDTO = {
@@ -92,7 +92,7 @@ export type LODDTO = {
 };
 
 /**
- * @author GustavBW
+ * @author lilybw
  * @since 0.0.1
  */
 export enum AssetUseCase {
